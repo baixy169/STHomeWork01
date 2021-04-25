@@ -17,7 +17,8 @@ public class SMTest {
                     System.out.println("学号: ");
                     int id = scanner.nextInt();
                     System.out.println("性别(1男0女): ");
-                    boolean gender = Boolean.parseBoolean(scanner.next());
+                    boolean gender = scanner.nextInt() == 1;
+                    //boolean gender = Boolean.parseBoolean(scanner.next());
                     System.out.println("年龄: ");
                     int age = scanner.nextInt();
                     Student student = new Student(id, name, birDate, gender, age);
